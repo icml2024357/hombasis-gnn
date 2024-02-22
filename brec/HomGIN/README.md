@@ -26,6 +26,6 @@ To reproduce best result, run:
 python test_BREC_search.py
 ```
 
-To reproduce other results for different data subsets, please change the corresponding code in `test_BREC_search.py` and `test_BREC.py`.
+To reproduce other results for different data subsets, please change the corresponding code in `test_BREC_search.py` and `test_BREC.py`:
 - Update the `DATASET_NAME` variable in `test_BREC_search.py`
 - Update the `part_dict` variable in `test_BREC.py`
