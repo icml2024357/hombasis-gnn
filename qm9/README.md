@@ -53,7 +53,7 @@ In order to reproduce the results in Section 5.2 of the paper, run the following
 
 ```bash
 cd src
-python main.py -d QM9 -m GCN --mode gr --res_freq 2 --batch_size 128 --emb_dim 128 --num_layers 8 --nb_reruns 5 --specific_task 0 
+python main.py -d QM9 -m GCN --mode gr --res_freq 2 --batch_size 128 --emb_dim 128 --num_layers 8
 ```
 
 To run 5 reruns of the model on only mu (the first property), use the following command:
@@ -68,4 +68,4 @@ python main.py -d QM9 -m GCN --mode gr --res_freq 2 --batch_size 128 --emb_dim 1
 You can use [neptune.ai](https://neptune.ai) to track the progress, by specifying your project and token in ``src/config.ini``.  Leave the fields as ``...`` if you want to just run locally. Alternatively, you can manually set your project and api token in lines 35 and 36 of `src/main.py`.
 
 ## Testing R-GCN+Hom with Fully-Adjacent layer
-We also tested a version of R-GCN that uses a fully-adjacent layer at the end in accordance with [Alon et al. (2021)](https://arxiv.org/abs/2006.05205). In order to reproduce those results that are presented in Appendix D.4, replace the `src/main.py` and `src/models/gcn.py` files with the corresponding files in the `FA_files` directory, and use the commands above to run the model.
+We also tested a version of R-GCN that uses a fully-adjacent layer at the end in accordance with [Alon et al. (2021)](https://arxiv.org/abs/2006.05205). In order to reproduce those results (which are presented in Appendix D.4), replace the `src/main.py` and `src/models/gcn.py` files with the corresponding files in the `FA_files` directory, and use the commands above to run the model.
